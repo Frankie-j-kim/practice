@@ -5,15 +5,17 @@ module.exports = {
     es2022: true,
     jest: true,
   },
-  plugins: ['react', 'react-hooks', 'import'],
+  plugins: ['react', 'react-hooks', 'import', '@typescript-eslint'],
   extends: [
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:import/recommended',
     'plugin:prettier/recommended',
     'plugin:react/recommended', // Uses the recommended rules from @eslint-plugin-react
+    'plugin:@typescript-eslint/recommended',
     'prettier',
   ],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest', // Allows for the parsing of modern ECMAScript features
     sourceType: 'module', // Allows for the use of imports
