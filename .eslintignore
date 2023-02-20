@@ -1,0 +1,13 @@
+node_modules/*
+logs/*
+.vscode/*
+.husky/*
+package.json
+package-lock.json
+build/*
+build-dev/*
+build-stage/*
+dist/*
+.gitignore
+.gitlab-ci.yml
+README.md
