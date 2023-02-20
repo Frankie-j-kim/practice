@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'styles/index.css';
-import App from 'App';
+import {router} from 'route';
 import reportWebVitals from './reportWebVitals';
 import {worker} from 'mocks/browsers';
+import {RouterProvider} from 'react-router';
 
 if (process.env.NODE_ENV === 'development') {
   worker.start();
@@ -12,7 +13,7 @@ if (process.env.NODE_ENV === 'development') {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 );
 
